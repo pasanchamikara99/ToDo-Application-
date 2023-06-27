@@ -3,12 +3,22 @@ import React from "react";
 export default function () {
   return (
     <div>
-      <h2>Login</h2>
-
-      <form action="">
-        <input type="text" placeholder="enter your email" />
-        <input type="text" name="" id="" placeholder="enter password" />
-      </form>
+      <div className="login">
+        <h2>Login Form </h2>
+        <form>
+          <div className="form-group">
+            <label>Username</label>
+            <input type="text" className="form-control" />
+          </div>
+          <div className="form-group">
+            <label>Password</label>
+            <input type="password" className="form-control" />
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
