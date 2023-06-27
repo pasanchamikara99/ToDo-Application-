@@ -1,25 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function () {
+export default function Register() {
   return (
     <div>
+      {" "}
       <div className="login">
-        <h2>Login Form </h2>
+        <h2>Register Form </h2>
         <form>
           <div className="form-group">
-            <label>Username</label>
+            <label>Name</label>
+            <br />
             <input type="text" className="form-control" />
+          </div>
+          <div className="form-group">
+            <label>email</label> <br />
+            <input type="email" className="form-control" />
           </div>
           <div className="form-group">
             <label>Password</label>
             <input type="password" className="form-control" />
           </div>
+          <div className="form-group">
+            <label>Confirm Password</label>
+            <input type="password" className="form-control" />
+          </div>
           <button type="submit" className="btn btn-primary">
-            Login
+            Register
           </button>
           <p>
-            Don't have an account ?<Link to="/signin"> Register</Link>
+            Already Registred ?<Link to="/login"> Signin</Link>
           </p>
         </form>
       </div>
