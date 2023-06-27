@@ -25,7 +25,24 @@ const addTodo = async (req, res) => {
     });
 };
 
+const completeTodo = async (req, res) => {
+  const todo = await Todo.findById(req.params.id);
+  todo.complete = !todo.complete;
+  todo.save();
+  res.json(todo);
+};
+
+const deleteTodo = async (req, res) => {
+  const id = req.params.id;
+
+  const todo = await Todo.findByIdAndDelete(id);
+
+  res.send(todo);
+};
+
 module.exports = {
   addTodo,
   getTodo,
+  completeTodo,
+  deleteTodo,
 };

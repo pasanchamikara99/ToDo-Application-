@@ -4,18 +4,18 @@ GET  http://localhost:8000/api/v1/todo
 ###
 
 
-POST http://localhost:8000/todo/add
+POST http://localhost:8000/api/v1/todo/add
 Content-Type: application/json
 
 {
-    "text":"First Do"
+    "text":"Seconds Do"
 }
 
 ################################
 
-DELETE http://localhost:8000/todo/649934557c45ff91db75ab67
+DELETE http://localhost:8000/api/v1/todo/delete/649934557c45ff91db75ab67
 
 
 ################################
 
-PUT http://localhost:8000/todo/complete/649934557c45ff91db75ab67
+PUT http://localhost:8000/api/v1/todo/complete/649934557c45ff91db75ab67
