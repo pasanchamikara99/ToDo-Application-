@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Title() {
   const [clicked, setClicked] = useState(false);
@@ -20,7 +21,10 @@ export default function Title() {
         <div className="title">
           <h1>Welcome Pasan</h1>
 
-          <button>Log Out</button>
+          <button>
+            {" "}
+            <Link to="/login">Log Out</Link>
+          </button>
         </div>
 
         <div className="headerTitle">
