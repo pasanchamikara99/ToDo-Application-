@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #202b3e;
+  color: #eee;
+}
+
+.header h1 {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.header h4 {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+.todos {
+  margin: 20px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(7, 19, 72);
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.5s;
+  margin-bottom: 16px;
+  cursor: pointer;
+  min-width: 80%;
+  align-items: center;
+}
+
+.todo h5 {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.todo button {
+  padding: 6px;
+  margin: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+}
+
+.headerTitle {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTitle button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.addTaskform {
+  margin: 25px;
+}
+
+.addTaskform input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.addTaskform button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.title button {
+  padding: 8px;
+  height: 30px;
+
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 5px;
+}

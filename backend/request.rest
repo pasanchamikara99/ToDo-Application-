@@ -1,0 +1,21 @@
+GET  http://localhost:8000/todo
+
+
+###
+
+
+POST http://localhost:8000/todo/add
+Content-Type: application/json
+
+{
+    "text":"First Do"
+}
+
+################################
+
+DELETE http://localhost:8000/todo/649934557c45ff91db75ab67
+
+
+################################
+
+PUT http://localhost:8000/todo/complete/649934557c45ff91db75ab67
