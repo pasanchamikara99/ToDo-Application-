@@ -5,6 +5,7 @@ dotenv.config();
 const app = express();
 const cors = require("cors");
 const TodoRoutes = require("./Routes/TodoRoutes");
+const UserRoutes = require("./Routes/UserRoutes");
 
 const port = 8000;
 
@@ -26,3 +27,6 @@ mongoose
 
 //Todo CRUD
 app.use("/api/v1/todo", TodoRoutes);
+
+//User Routes (Login and Register)
+app.use("/api/v1/user", UserRoutes);
