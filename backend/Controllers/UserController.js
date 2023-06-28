@@ -3,9 +3,13 @@ const User = require("../Models/User");
 
 const login = async (req, res) => {
   const user = await User.find({ email: req.body.email });
-  console.log(user.password);
-  if (user) {
-    res.status(200).json(user);
+
+  if (user.lenght > 0) {
+    if (user[0].password == req.body.password) {
+      res.status(200).send("Login successful");
+    } else {
+      res.status(401).json({ message: "Invalid Credentials" });
+    }
   } else {
     res.status(404).json({ message: "No User found" });
   }
