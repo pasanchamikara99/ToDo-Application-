@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 export default function Title() {
   const [clicked, setClicked] = useState(false);
@@ -11,6 +13,34 @@ export default function Title() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const data = {
+      text: task,
+    };
+
+    axios
+      .post("http://localhost:8000/api/v1/todo/add", data)
+      .then((response) => {
+        if (response.status == 201) {
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Todo Has been Added",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            footer: '<a href="">Why do I have this issue?</a>',
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 
     setTask("");
   };
