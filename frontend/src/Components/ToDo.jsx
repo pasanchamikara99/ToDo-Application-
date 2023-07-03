@@ -22,6 +22,9 @@ export default function ToDo() {
           <div className="text">
             <h5>{data.text}</h5>
           </div>
+          <div className="text">
+            <h5>{data.timeStamp}</h5>
+          </div>
           <div className="buttons">
             <button>Delete</button>
             <button>Edit</button>

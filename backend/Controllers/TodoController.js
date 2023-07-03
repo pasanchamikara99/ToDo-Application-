@@ -13,6 +13,8 @@ const getTodo = async (req, res) => {
 const addTodo = async (req, res) => {
   const todo = new Todo({
     text: req.body.text,
+
+    timeStamp: req.body.date,
   });
 
   todo

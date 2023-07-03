@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 export default function Title() {
   const [clicked, setClicked] = useState(false);
   const [task, setTask] = useState("");
+  const [date, setDate] = useState("");
 
   const addTask = () => {
     setClicked(true);
@@ -13,9 +14,9 @@ export default function Title() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const data = {
       text: task,
+      date: date,
     };
 
     axios
@@ -43,6 +44,7 @@ export default function Title() {
       });
 
     setTask("");
+    setDate("");
   };
 
   return (
@@ -73,6 +75,13 @@ export default function Title() {
                 placeholder="Enter Task "
                 onChange={(e) => setTask(e.target.value)}
               />
+
+              <input
+                type="date"
+                value={task}
+                onChange={(e) => setDate(e.target.value)}
+              />
+
               <button>Submit</button>
               <button
                 onClick={() => {
