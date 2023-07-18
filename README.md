@@ -2,7 +2,7 @@
 
 This is a Todo Application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application allows users to create, manage, and organize their daily tasks in a convenient and user-friendly manner.
 
-![Todo Application Screenshot](todo-screenshot.png)
+//for screenshots
 
 ## Features
 
@@ -28,12 +28,12 @@ To get a local copy of the project up and running, follow these steps:
 
 2. **Clone the repository**:
    ```
-   git clone https://github.com/your-username/todo-application.git
+  (https://github.com/pasanchamikara99/ToDo-Application-.git)
    ```
 
 3. **Install dependencies**: Navigate to the project directory and install the necessary dependencies for both the server and the client.
    ```
-   cd todo-application
+   cd ToDo-Application
    npm install
    cd client
    npm install
@@ -67,17 +67,14 @@ Contributions are welcome! If you would like to contribute to this project, plea
 7. Open a pull request with a detailed description of your changes.
 
 ## License
-
 This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
-
-- This project was inspired by [Trello](https://trello.com/).
 - Special thanks to the open-source community for the amazing libraries and tools that were used in this project.
 
 ## Contact
 
 If you have any questions, suggestions, or feedback, please feel free to reach out to me:
 
-- Email: your-email@example.com
-- GitHub: [Your GitHub Profile](https://github.com/your-username)
+- Email: pasanchamikara989@gmail.com
+- GitHub: [https://github.com/pasanchamikara99]
