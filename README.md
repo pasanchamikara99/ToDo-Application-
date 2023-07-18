@@ -79,4 +79,4 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions, suggestions, or feedback, please feel free to reach out to me:
 
 - Email: pasanchamikara989@gmail.com
-- GitHub: [Your GitHub Profile](https://github.com/pasanchamikara99/)
+- GitHub: [My GitHub Profile](https://github.com/pasanchamikara99/)
