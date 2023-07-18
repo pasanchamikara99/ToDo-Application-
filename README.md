@@ -2,11 +2,11 @@
 
 This is a Todo Application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application allows users to create, manage, and organize their daily tasks in a convenient and user-friendly manner.
 
-//for screenshots
+//screenshots
 
 ## Features
 
-- **User Authentication**: Users can create an account, log in, and securely manage their own todo lists.
+- **User Authentication**: Users can create an account, log in, and securely manage their own to-do lists.
 - **Task Management**: Users can create new tasks, mark tasks as completed, edit task details, and delete tasks.
 - **Task Categories**: Tasks can be categorized into different categories or projects to keep things organized.
 - **Filtering and Sorting**: Users can filter and sort tasks based on various criteria such as priority, due date, and completion status.
@@ -28,12 +28,12 @@ To get a local copy of the project up and running, follow these steps:
 
 2. **Clone the repository**:
    ```
-  (https://github.com/pasanchamikara99/ToDo-Application-.git)
+   git clone https://github.com/pasanchamikara99/ToDo-Application-.git
    ```
 
 3. **Install dependencies**: Navigate to the project directory and install the necessary dependencies for both the server and the client.
    ```
-   cd ToDo-Application
+   cd todo-application
    npm install
    cd client
    npm install
@@ -67,9 +67,11 @@ Contributions are welcome! If you would like to contribute to this project, plea
 7. Open a pull request with a detailed description of your changes.
 
 ## License
+
 This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
+
 - Special thanks to the open-source community for the amazing libraries and tools that were used in this project.
 
 ## Contact
@@ -77,4 +79,4 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions, suggestions, or feedback, please feel free to reach out to me:
 
 - Email: pasanchamikara989@gmail.com
-- GitHub: [https://github.com/pasanchamikara99]
+- GitHub: [Your GitHub Profile](https://github.com/pasanchamikara99/)
